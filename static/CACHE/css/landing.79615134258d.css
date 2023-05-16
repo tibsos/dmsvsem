@@ -1,0 +1,215 @@
+/* #00B4D8 #4682B4 */
+/* line 7, static/scss/landing.scss */
+body {
+  background-color: #F0F8FF;
+  color: #1E2330; }
+
+/* line 16, static/scss/landing.scss */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* line 23, static/scss/landing.scss */
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+/* line 29, static/scss/landing.scss */
+::-webkit-scrollbar-thumb {
+  background: #1E2330;
+  border-radius: 50px; }
+
+/* line 37, static/scss/landing.scss */
+.nav {
+  position: relative;
+  top: 50px;
+  left: 2.5%;
+  height: 90px;
+  width: 95%;
+  background: #F0F8FF;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff; }
+  /* line 54, static/scss/landing.scss */
+  .nav .brand {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    height: 90px; }
+    /* line 63, static/scss/landing.scss */
+    .nav .brand .logo {
+      position: relative;
+      left: 5px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left; }
+      /* line 76, static/scss/landing.scss */
+      .nav .brand .logo .wrapper {
+        position: relative;
+        bottom: 5px;
+        width: 75px;
+        height: 75px;
+        border-radius: 100px;
+        box-shadow: 3px 3px 8px #ccd3d9, -3px -3px 8px #ffffff; }
+        /* line 90, static/scss/landing.scss */
+        .nav .brand .logo .wrapper #logoSVG {
+          width: 60px;
+          height: 60px;
+          fill: none; }
+          /* line 97, static/scss/landing.scss */
+          .nav .brand .logo .wrapper #logoSVG path {
+            stroke: #1E2330; }
+    /* line 109, static/scss/landing.scss */
+    .nav .brand .name {
+      position: relative;
+      right: 20px;
+      width: 250px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      font-size: 42px;
+      font-weight: bold; }
+  /* line 130, static/scss/landing.scss */
+  .nav .contact {
+    position: absolute;
+    right: 20px;
+    top: 0; }
+    /* line 136, static/scss/landing.scss */
+    .nav .contact div {
+      position: relative;
+      top: 10px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px 5px 10px;
+      border-radius: 100px;
+      box-shadow: 3px 3px 6px #ccd3d9, -3px -3px 6px #ffffff;
+      cursor: pointer; }
+    /* line 159, static/scss/landing.scss */
+    .nav .contact .email {
+      width: 260px;
+      float: right; }
+      /* line 165, static/scss/landing.scss */
+      .nav .contact .email #mailSVG {
+        width: 60px;
+        height: 60px; }
+        /* line 170, static/scss/landing.scss */
+        .nav .contact .email #mailSVG polyline, .nav .contact .email #mailSVG rect {
+          stroke: blue; }
+      /* line 178, static/scss/landing.scss */
+      .nav .contact .email #emailAddress {
+        font-size: 23px; }
+    /* line 186, static/scss/landing.scss */
+    .nav .contact .phone {
+      width: 250px;
+      margin-left: 30px;
+      float: right; }
+      /* line 195, static/scss/landing.scss */
+      .nav .contact .phone #phoneSVG {
+        width: 55px;
+        height: 55px; }
+        /* line 200, static/scss/landing.scss */
+        .nav .contact .phone #phoneSVG path {
+          stroke: green; }
+      /* line 208, static/scss/landing.scss */
+      .nav .contact .phone #phoneNumber {
+        position: relative;
+        top: -2px;
+        font-size: 23px; }
+
+/* line 223, static/scss/landing.scss */
+.content {
+  position: relative;
+  top: 150px;
+  left: 50px;
+  width: calc(100% - 100px); }
+  /* line 231, static/scss/landing.scss */
+  .content .text {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 50%;
+    float: left; }
+    /* line 242, static/scss/landing.scss */
+    .content .text h1 {
+      font-size: 80px; }
+    /* line 248, static/scss/landing.scss */
+    .content .text h2 {
+      font-size: 60px;
+      font-weight: normal; }
+    /* line 255, static/scss/landing.scss */
+    .content .text button {
+      position: relative;
+      height: 70px;
+      width: 450px;
+      background: transparent;
+      border: none;
+      border-radius: 100px;
+      box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff;
+      font-size: 25px;
+      cursor: pointer; }
+  /* line 279, static/scss/landing.scss */
+  .content .illustration {
+    position: relative;
+    bottom: 50px;
+    width: 50%;
+    float: right; }
+
+/* line 292, static/scss/landing.scss */
+.footer {
+  position: relative;
+  top: 350px;
+  left: 2.5%;
+  width: 95%; }
+  /* line 301, static/scss/landing.scss */
+  .footer .copyright {
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    float: left;
+    font-size: 23px; }
+  /* line 313, static/scss/landing.scss */
+  .footer .links {
+    position: relative;
+    left: -50px;
+    top: 1px;
+    float: right;
+    /* Link hover effect */ }
+    /* line 321, static/scss/landing.scss */
+    .footer .links a {
+      position: relative;
+      margin-right: 20px;
+      font-size: 22px;
+      text-decoration: none;
+      color: inherit; }
+    /* line 336, static/scss/landing.scss */
+    .footer .links a:before, .footer .links a:after, .footer .links a > span:before, .footer .links a > span:after {
+      content: '';
+      position: absolute;
+      transition: transform .5s ease; }
+    /* line 344, static/scss/landing.scss */
+    .footer .links a, .footer .links a > span {
+      position: relative;
+      color: #1E2330;
+      text-decoration: none;
+      line-height: 24px; }
+    /* line 353, static/scss/landing.scss */
+    .footer .links a {
+      display: inline-flex;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      overflow: hidden; }
+    /* line 362, static/scss/landing.scss */
+    .footer .links a:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 100px;
+      background: #492059;
+      transform: translateX(-100%); }
+    /* line 374, static/scss/landing.scss */
+    .footer .links a:hover:before {
+      transform: translateX(0); }

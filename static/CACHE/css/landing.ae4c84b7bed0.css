@@ -1,0 +1,109 @@
+/* #00B4D8 #4682B4 */
+/* line 5, static/scss/landing.scss */
+body {
+  background-color: #F0F8FF;
+  color: #1E2330; }
+
+/* line 13, static/scss/landing.scss */
+.nav {
+  position: relative;
+  top: 50px;
+  left: 2.5%;
+  height: 90px;
+  width: 95%;
+  background: #F0F8FF;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff; }
+  /* line 30, static/scss/landing.scss */
+  .nav .brand {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    height: 60px;
+    width: 300px; }
+    /* line 40, static/scss/landing.scss */
+    .nav .brand .logo {
+      position: relative;
+      left: 5px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left; }
+      /* line 54, static/scss/landing.scss */
+      .nav .brand .logo #logoSVG {
+        width: 600px;
+        height: 600px;
+        fill: none; }
+        /* line 61, static/scss/landing.scss */
+        .nav .brand .logo #logoSVG path {
+          stroke: #1E2330; }
+    /* line 71, static/scss/landing.scss */
+    .nav .brand .name {
+      position: relative;
+      top: 2px;
+      right: 30px;
+      width: 200px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      font-size: 37px;
+      font-weight: bold; }
+  /* line 94, static/scss/landing.scss */
+  .nav .contact {
+    position: absolute;
+    right: 20px;
+    top: 0; }
+    /* line 100, static/scss/landing.scss */
+    .nav .contact div {
+      padding: 5px 10px 5px 10px; }
+    /* line 106, static/scss/landing.scss */
+    .nav .contact .email {
+      position: relative;
+      top: 8px;
+      width: 250px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      border-radius: 100px;
+      box-shadow: 3px 3px 10px #ccd3d9, -3px -3px 10px #ffffff;
+      cursor: pointer; }
+      /* line 127, static/scss/landing.scss */
+      .nav .contact .email #mailSVG {
+        width: 60px;
+        height: 60px; }
+        /* line 132, static/scss/landing.scss */
+        .nav .contact .email #mailSVG polyline, .nav .contact .email #mailSVG rect {
+          stroke: blue; }
+      /* line 140, static/scss/landing.scss */
+      .nav .contact .email #emailAddress {
+        font-size: 23px; }
+    /* line 148, static/scss/landing.scss */
+    .nav .contact .phone {
+      position: relative;
+      top: 8px;
+      width: 200px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+      float: right;
+      cursor: pointer; }
+      /* line 166, static/scss/landing.scss */
+      .nav .contact .phone #phoneSVG {
+        width: 55px;
+        height: 55px; }
+        /* line 171, static/scss/landing.scss */
+        .nav .contact .phone #phoneSVG path {
+          stroke: green; }
+      /* line 179, static/scss/landing.scss */
+      .nav .contact .phone #phoneNumber {
+        position: relative;
+        top: -2px;
+        font-size: 23px; }

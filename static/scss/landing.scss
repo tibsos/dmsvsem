@@ -1,0 +1,417 @@
+/* #00B4D8 #4682B4 */
+
+$text-color: #1E2330;
+
+$nav-height: 90px;
+
+body {
+
+    background-color: #F0F8FF;
+
+    color: $text-color;
+
+}
+
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+
+    background: $text-color;
+    border-radius: 50px;
+
+}
+
+.nav {
+
+    position: relative;
+
+    top: 50px;
+    left: 2.5%;
+
+    height: $nav-height;
+    width: 95%;
+
+    background: #F0F8FF;
+
+    border-radius: 100px;
+
+    box-shadow:  5px 5px 10px #ccd3d9,
+        -5px -5px 10px #ffffff;
+
+    .brand {
+
+        position: relative;
+
+        left: 10px;
+        top: 5px;
+
+        width: 350px;
+
+        height: $nav-height;
+
+        .logo {
+
+            position: relative;
+            left: 5px;
+
+            height: $nav-height;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            float: left;
+
+            .wrapper {
+
+                position: relative;
+                bottom: 5px;
+                right: 4px;
+
+                width: 75px;
+                height: 75px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 100px;
+
+                box-shadow:  3px 3px 8px #ccd3d9,
+                    -3px -3px 8px #ffffff;
+
+                cursor: pointer;
+
+                #logoSVG {
+
+                    width: 60px;
+                    height: 60px;
+
+                    fill: none;
+    
+                    path {
+    
+                        stroke: $text-color;
+    
+                    }
+    
+                }
+
+            }
+
+        }
+
+        .wrapper.in {
+
+            box-shadow: inset 5px 5px 6px #ccd3d9,
+                inset -5px -5px 6px #ffffff;
+    
+        }
+
+        .name {
+
+            position: relative;
+            right: 15px;
+
+            width: 250px;
+            height: 90px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            float: right;
+            
+            font-size: 44px;
+            font-weight: bold;
+
+        }
+
+    }
+
+    .contact {
+
+        position: absolute;
+        right: 10px;
+        top: 0;
+
+        div {
+
+            position: relative;
+            top: 10px;
+
+            height: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 5px 10px 5px 10px;
+
+            border-radius: 100px;
+
+            box-shadow:  3px 3px 6px #ccd3d9,
+                -3px -3px 6px #ffffff; 
+                
+                
+            cursor: pointer;
+
+        }
+
+        div.in {
+
+            box-shadow: inset 5px 5px 6px #ccd3d9,
+                inset -5px -5px 6px #ffffff;
+
+        }
+
+        .email {
+
+            width: 270px;
+
+            float: right;      
+
+            #mailSVG {
+
+                position: relative;
+                bottom: 2px;
+
+                width: 70px;
+                height: 70px;
+
+                polyline, rect {
+
+                    stroke: blue;
+
+                }
+
+            }
+
+            #emailAddress {
+
+                position: relative;
+                top: 1px;
+
+                font-size: 23px;
+
+            }
+
+        }
+
+        .phone {
+
+            width: 250px;
+
+            margin-left: 30px;
+
+            float: right;
+
+
+            #phoneSVG {
+
+                width: 55px;
+                height: 55px;
+
+                path {
+
+                    stroke: green;
+
+                }
+
+            }
+
+            #phoneNumber {
+
+                position: relative;
+                top: 1px;
+
+                font-size: 23px;
+
+            }
+
+        }
+
+    }
+
+}
+
+.content {
+
+    position: relative;
+    top: 150px;
+    left: 50px;
+
+    width: calc(100% - 100px);
+
+    .text {
+
+        position: relative;
+
+        top: 30px;
+        left: 50px;
+
+        width: 50%;
+
+        float: left;
+
+        h1 {
+
+            font-size: 80px;
+    
+        }
+    
+        h2 {
+    
+            font-size: 60px;
+            font-weight: normal;
+    
+        }
+    
+        #ctaBtn {
+    
+            position: relative;
+    
+            height: 70px;
+            width: 450px;
+    
+            background: transparent;
+    
+            border: none;
+            border-radius: 100px;
+    
+            
+            box-shadow:  5px 5px 6px #ccd3d9,
+            -5px -5px 6px #ffffff;
+            
+            font-size: 25px;
+    
+            cursor: pointer;
+    
+        }
+
+        #ctaBtn.in {
+
+            box-shadow: inset 5px 5px 6px #ccd3d9,
+                inset -5px -5px 6px #ffffff;
+
+        }
+
+    }
+
+    .illustration {
+
+        position: relative;
+        bottom: 50px;
+
+        width: 50%;
+
+        float: right;
+
+    }
+
+}
+
+.footer {
+
+    position: relative;
+    top: 350px;
+
+    left: 2.5%;
+
+    width: 95%;
+
+    .copyright {
+
+        position: relative;
+        bottom: 20px;
+        left: 50px;
+      
+        float: left;
+
+        font-size: 23px;
+
+    }
+
+    .links {
+
+        position: relative;
+        left: -50px;
+        top: 1px;
+
+        float: right;
+
+        a {
+
+            position: relative;
+
+            margin-right: 20px;
+
+            font-size: 22px;
+
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+        /* Link hover effect */
+
+        a:before, a:after, a > span:before, a > span:after {
+
+            content: '';
+            position: absolute;
+            transition: transform .5s ease;
+
+        }
+
+        a, a > span {
+
+            position: relative;
+            color: $text-color;
+            text-decoration: none;
+            line-height: 24px;
+        
+        }
+          
+        a {
+
+            display: inline-flex;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            overflow: hidden;
+
+        }
+          
+        a:before {
+
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 100px;
+            background: #492059;
+            transform: translateX(-100%);
+
+        }
+          
+        a:hover:before {
+
+            transform: translateX(0);
+
+        }
+
+    }
+
+}

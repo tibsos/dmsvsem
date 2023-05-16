@@ -1,0 +1,45 @@
+/* #00B4D8 #4682B4 */
+/* line 4, static/scss/landing.scss */
+body {
+  background-color: #F0F8FF; }
+
+/* line 10, static/scss/landing.scss */
+.nav {
+  position: relative;
+  top: 50px;
+  left: 2.5%;
+  height: 70px;
+  width: 95%;
+  background: #F0F8FF;
+  border-radius: 100px;
+  box-shadow: 3px 3px 6px #00ded0, -3px -3px 6px #00ffff; }
+  /* line 27, static/scss/landing.scss */
+  .nav .brand {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    height: 60px;
+    width: 300px; }
+    /* line 37, static/scss/landing.scss */
+    .nav .brand .logo {
+      position: relative;
+      left: 5px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left; }
+      /* line 51, static/scss/landing.scss */
+      .nav .brand .logo #logoSVG {
+        width: 60px;
+        height: 60px;
+        stroke: #FF7F50; }
+    /* line 62, static/scss/landing.scss */
+    .nav .brand .name {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right; }
