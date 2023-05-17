@@ -7,6 +7,8 @@ $nav-height: 110px;
 
 body {
 
+    margin-bottom: 800px;
+
     background-color: #F0F8FF;
 
     color: $text-color;
@@ -252,7 +254,7 @@ body {
             
             float: right;
             
-            font-size: 44px;
+            font-size: 48px;
             font-weight: bold;
 
             cursor: pointer;
@@ -299,8 +301,6 @@ body {
 
         .email {
 
-            width: 270px;
-
             float: right;      
 
             #mailSVG {
@@ -324,15 +324,13 @@ body {
                 position: relative;
                 top: 1px;
 
-                font-size: 23px;
+                font-size: 24.5px;
 
             }
 
         }
 
         .phone {
-
-            width: 250px;
 
             margin-left: 30px;
 
@@ -461,6 +459,8 @@ body {
 
         font-size: 23px;
 
+        cursor: pointer;
+
     }
 
     .links {
@@ -555,6 +555,68 @@ body {
         .links {
 
             left: 200px;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    html {
+
+        margin-bottom: 200px;
+
+    }
+
+
+    .copyright {
+
+        display: none;
+       
+    }
+
+    .content {
+
+        left: 10px;
+        top: 100px;
+
+        width: 100%;
+
+    }
+
+    .illustration {display: none;}
+
+    .contact {
+
+        div {
+
+            padding: 0;
+
+        }
+
+        .email {
+
+            width: 60px;
+
+        }
+
+        #emailAddress {
+
+            display: none;
+
+        }
+
+        .phone {
+
+            width: 60px;
+        
+        }
+
+        #phoneNumber {
+
+            display: none;
 
         }
 
