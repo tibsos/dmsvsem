@@ -1,0 +1,41 @@
+/* line 4, static/scss/why-us.scss */
+body {
+  font-family: "PT Serif";
+  background: #F0F8FF; }
+
+/* line 12, static/scss/why-us.scss */
+.main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  /* line 26, static/scss/why-us.scss */
+  .main .why {
+    position: relative;
+    top: 10px; }
+    /* line 31, static/scss/why-us.scss */
+    .main .why h1 {
+      font-size: 60px; }
+    /* line 37, static/scss/why-us.scss */
+    .main .why svg {
+      position: relative;
+      left: 140px;
+      bottom: 70px;
+      width: 650px;
+      height: 650px; }
+  /* line 50, static/scss/why-us.scss */
+  .main .reasons {
+    position: relative;
+    bottom: 60px; }
+    /* line 55, static/scss/why-us.scss */
+    .main .reasons .reason {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff; }

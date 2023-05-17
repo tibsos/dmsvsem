@@ -1,0 +1,22 @@
+/* line 3, static/scss/qna.scss */
+.qna {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  /* line 12, static/scss/qna.scss */
+  .qna .question-list {
+    list-style-type: none; }
+    /* line 18, static/scss/qna.scss */
+    .qna .question-list li .question {
+      width: 600px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      margin: 30px;
+      border-radius: 100px;
+      box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff; }
+      /* line 33, static/scss/qna.scss */
+      .qna .question-list li .question h1 {
+        font-size: 30px; }

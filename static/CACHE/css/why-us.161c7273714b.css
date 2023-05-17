@@ -1,0 +1,28 @@
+/* line 1, static/scss/why-us.scss */
+body {
+  font-family: "PT Serif"; }
+
+/* line 7, static/scss/why-us.scss */
+.main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  /* line 21, static/scss/why-us.scss */
+  .main .why {
+    position: relative;
+    bottom: 10px; }
+    /* line 26, static/scss/why-us.scss */
+    .main .why h1 {
+      font-size: 60px; }
+    /* line 32, static/scss/why-us.scss */
+    .main .why svg {
+      position: relative;
+      top: 200px;
+      width: 600px;
+      height: 600px; }

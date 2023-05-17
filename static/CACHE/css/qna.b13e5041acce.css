@@ -1,0 +1,6 @@
+/* line 5, static/scss/qna.scss */
+.qna .question-list {
+  list-style-type: none; }
+  /* line 13, static/scss/qna.scss */
+  .qna .question-list li div h1 {
+    font-size: 30px; }

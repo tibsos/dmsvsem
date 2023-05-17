@@ -1,0 +1,29 @@
+/* line 1, static/scss/qna.scss */
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+/* line 18, static/scss/qna.scss */
+.question {
+  cursor: pointer;
+  font-weight: bold; }
+
+/* line 23, static/scss/qna.scss */
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; }
+
+/* line 29, static/scss/qna.scss */
+.question:hover + .answer,
+.answer:hover {
+  max-height: 500px;
+  /* Adjust the value to fit your content */
+  transition: max-height 0.3s ease-in; }

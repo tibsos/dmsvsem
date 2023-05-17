@@ -1,26 +1,19 @@
 from django.shortcuts import render
 
-from datetime import datetime as dt
+import re
 
 def landing(request):
 
-    # analytics
+    MOBILE_AGENT_RE=re.compile(r".*(iphone|mobile|androidtouch)",re.IGNORECASE)
 
-    datetime = dt.now()
+    if MOBILE_AGENT_RE.match(request.META['HTTP_USER_AGENT']):
+        return render(request, 'landing_mobile.html')
+    else:
+        return render(request, 'landing_desktop.html')
+        
 
-    user_agent = request.META.get('HTTP_USER_AGENT') or request.headers['User-Agent']
+def qa(request):
+    return render(request, 'q&a.html')
 
-    ip = request.META.get('REMOTE_ADDR')
-
-        # get country and city
-
-    cookies = request.COOKIES
-
-    # create an analytics model
-
-    print(datetime)
-    print(user_agent)
-    print(ip)
-    print(cookies)
-
-    return render(request, 'landing.html')
+def why_us(request):
+    return render(request, 'why_us.html')

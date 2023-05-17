@@ -1,0 +1,308 @@
+/* #00B4D8 #4682B4 */
+/* line 8, static/scss/landing.scss */
+body {
+  background-color: #F0F8FF;
+  color: #1E2330; }
+
+/* line 17, static/scss/landing.scss */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* line 24, static/scss/landing.scss */
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+/* line 30, static/scss/landing.scss */
+::-webkit-scrollbar-thumb {
+  background: #1E2330;
+  border-radius: 50px; }
+
+/* line 38, static/scss/landing.scss */
+.cta-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*   opacity: 0;
+    display: none; */
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10; }
+  /* line 54, static/scss/landing.scss */
+  .cta-popup .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 380px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #F0F8FF; }
+    /* line 71, static/scss/landing.scss */
+    .cta-popup .wrapper #closePopup {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff;
+      font-size: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 3; }
+    /* line 100, static/scss/landing.scss */
+    .cta-popup .wrapper #closePopup.in {
+      box-shadow: inset 5px 5px 10px #ccd3d9, inset -5px -5px 10px #ffffff; }
+    /* line 107, static/scss/landing.scss */
+    .cta-popup .wrapper h1 {
+      position: relative;
+      top: 20px;
+      left: 20px; }
+    /* line 115, static/scss/landing.scss */
+    .cta-popup .wrapper .contact-info {
+      position: relative;
+      top: 30px; }
+      /* line 120, static/scss/landing.scss */
+      .cta-popup .wrapper .contact-info .phone {
+        position: relative;
+        left: 10px; }
+        /* line 125, static/scss/landing.scss */
+        .cta-popup .wrapper .contact-info .phone svg {
+          width: 70px;
+          height: 70px;
+          float: left; }
+          /* line 132, static/scss/landing.scss */
+          .cta-popup .wrapper .contact-info .phone svg path {
+            stroke: green; }
+        /* line 140, static/scss/landing.scss */
+        .cta-popup .wrapper .contact-info .phone span {
+          position: relative;
+          top: 20px;
+          font-size: 33px; }
+
+/* line 157, static/scss/landing.scss */
+.nav {
+  position: relative;
+  top: 50px;
+  left: 2.5%;
+  height: 110px;
+  width: 95%;
+  background: #F0F8FF;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff; }
+  /* line 174, static/scss/landing.scss */
+  .nav .brand {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 350px;
+    height: 110px; }
+    /* line 185, static/scss/landing.scss */
+    .nav .brand .logo {
+      position: relative;
+      left: 5px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left; }
+      /* line 198, static/scss/landing.scss */
+      .nav .brand .logo .wrapper {
+        position: relative;
+        bottom: 5px;
+        right: 4px;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        cursor: pointer; }
+        /* line 216, static/scss/landing.scss */
+        .nav .brand .logo .wrapper #logoSVG {
+          width: 60px;
+          height: 60px;
+          fill: none; }
+          /* line 223, static/scss/landing.scss */
+          .nav .brand .logo .wrapper #logoSVG path {
+            stroke: #1E2330; }
+    /* line 235, static/scss/landing.scss */
+    .nav .brand .wrapper.in {
+      box-shadow: inset 5px 5px 6px #ccd3d9, inset -5px -5px 6px #ffffff; }
+    /* line 242, static/scss/landing.scss */
+    .nav .brand .name {
+      position: relative;
+      top: 5px;
+      right: 15px;
+      width: 250px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer; }
+  /* line 266, static/scss/landing.scss */
+  .nav .contact {
+    position: absolute;
+    right: 20px;
+    top: 10px; }
+    /* line 272, static/scss/landing.scss */
+    .nav .contact div {
+      position: relative;
+      top: 10px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px 5px 10px;
+      border-radius: 100px;
+      box-shadow: 3px 3px 6px #ccd3d9, -3px -3px 6px #ffffff;
+      cursor: pointer; }
+    /* line 295, static/scss/landing.scss */
+    .nav .contact div.in {
+      box-shadow: inset 5px 5px 6px #ccd3d9, inset -5px -5px 6px #ffffff; }
+    /* line 302, static/scss/landing.scss */
+    .nav .contact .email {
+      width: 270px;
+      float: right; }
+      /* line 308, static/scss/landing.scss */
+      .nav .contact .email #mailSVG {
+        position: relative;
+        bottom: 2px;
+        width: 70px;
+        height: 70px; }
+        /* line 316, static/scss/landing.scss */
+        .nav .contact .email #mailSVG polyline, .nav .contact .email #mailSVG rect {
+          stroke: blue; }
+      /* line 324, static/scss/landing.scss */
+      .nav .contact .email #emailAddress {
+        position: relative;
+        top: 1px;
+        font-size: 23px; }
+    /* line 335, static/scss/landing.scss */
+    .nav .contact .phone {
+      width: 250px;
+      margin-left: 30px;
+      float: right; }
+      /* line 344, static/scss/landing.scss */
+      .nav .contact .phone #phoneSVG {
+        width: 55px;
+        height: 55px; }
+        /* line 349, static/scss/landing.scss */
+        .nav .contact .phone #phoneSVG path {
+          stroke: green; }
+      /* line 357, static/scss/landing.scss */
+      .nav .contact .phone #phoneNumber {
+        position: relative;
+        top: 1px;
+        font-size: 23px; }
+    /* line 368, static/scss/landing.scss */
+    .nav .contact #emailAddress {
+      position: absolute;
+      top: 0; }
+
+/* line 379, static/scss/landing.scss */
+.content {
+  position: relative;
+  top: 150px;
+  left: 50px;
+  width: calc(100% - 100px); }
+  /* line 387, static/scss/landing.scss */
+  .content .text {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 50%;
+    float: left; }
+    /* line 398, static/scss/landing.scss */
+    .content .text h1 {
+      font-size: 80px; }
+    /* line 404, static/scss/landing.scss */
+    .content .text h2 {
+      font-size: 60px;
+      font-weight: normal; }
+    /* line 411, static/scss/landing.scss */
+    .content .text #ctaBtn {
+      position: relative;
+      height: 70px;
+      width: 450px;
+      background: transparent;
+      border: none;
+      border-radius: 100px;
+      box-shadow: 5px 5px 6px #ccd3d9, -5px -5px 6px #ffffff;
+      font-size: 25px;
+      cursor: pointer; }
+    /* line 433, static/scss/landing.scss */
+    .content .text #ctaBtn.in {
+      box-shadow: inset 5px 5px 6px #ccd3d9, inset -5px -5px 6px #ffffff; }
+  /* line 442, static/scss/landing.scss */
+  .content .illustration {
+    position: relative;
+    bottom: 50px;
+    width: 50%;
+    float: right; }
+
+/* line 455, static/scss/landing.scss */
+.footer {
+  position: relative;
+  top: 350px;
+  left: 2.5%;
+  width: 95%; }
+  /* line 464, static/scss/landing.scss */
+  .footer .copyright {
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    float: left;
+    font-size: 23px; }
+  /* line 476, static/scss/landing.scss */
+  .footer .links {
+    position: relative;
+    left: -50px;
+    top: 1px;
+    float: right;
+    /* Link hover effect */ }
+    /* line 484, static/scss/landing.scss */
+    .footer .links a {
+      position: relative;
+      margin-right: 20px;
+      font-size: 22px;
+      text-decoration: none;
+      color: inherit; }
+    /* line 499, static/scss/landing.scss */
+    .footer .links a:before, .footer .links a:after, .footer .links a > span:before, .footer .links a > span:after {
+      content: '';
+      position: absolute;
+      transition: transform .5s ease; }
+    /* line 507, static/scss/landing.scss */
+    .footer .links a, .footer .links a > span {
+      position: relative;
+      color: #1E2330;
+      text-decoration: none;
+      line-height: 24px; }
+    /* line 516, static/scss/landing.scss */
+    .footer .links a {
+      display: inline-flex;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      overflow: hidden; }
+    /* line 525, static/scss/landing.scss */
+    .footer .links a:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 100px;
+      background: #492059;
+      transform: translateX(-100%); }
+    /* line 537, static/scss/landing.scss */
+    .footer .links a:hover:before {
+      transform: translateX(0); }

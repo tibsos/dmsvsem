@@ -1,8 +1,9 @@
 /* #00B4D8 #4682B4 */
 
 $text-color: #1E2330;
+$theme-color: #F0F8FF;
 
-$nav-height: 90px;
+$nav-height: 110px;
 
 body {
 
@@ -34,6 +35,123 @@ body {
 
 }
 
+.cta-popup {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    display: none;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    z-index: 10;
+
+    .wrapper {
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        width: 380px;
+        height: 240px;
+
+        border-radius: 20px;
+    
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        background: $theme-color;
+
+        #closePopup {
+
+            position: absolute;
+            right: 20px;
+            top: 20px;
+
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 100px;
+
+            box-shadow:  5px 5px 10px #ccd3d9,
+                -5px -5px 10px #ffffff;
+
+            font-size: 50px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            z-index: 3;
+
+        }
+
+        #closePopup.in {
+
+            box-shadow: inset 5px 5px 10px #ccd3d9,
+                inset -5px -5px 10px #ffffff;
+
+        }
+
+        h1 {
+
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+        }
+
+        .contact-info {
+
+            position: relative;
+            top: 30px;
+
+            .phone {
+
+                position: relative;
+                left: 10px;
+
+                svg {
+
+                    width: 70px;
+                    height: 70px;
+
+                    float: left;
+
+                    path {
+
+                        stroke: green;
+
+                    }
+
+                }
+
+                span {
+
+                    position: relative;
+                    top: 20px;
+
+                    font-size: 33px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
 .nav {
 
     position: relative;
@@ -56,7 +174,7 @@ body {
         position: relative;
 
         left: 10px;
-        top: 5px;
+        top: 10px;
 
         width: 350px;
 
@@ -90,8 +208,6 @@ body {
 
                 border-radius: 100px;
 
-                box-shadow:  3px 3px 8px #ccd3d9,
-                    -3px -3px 8px #ffffff;
 
                 cursor: pointer;
 
@@ -124,6 +240,7 @@ body {
         .name {
 
             position: relative;
+            top: 3px;
             right: 15px;
 
             width: 250px;
@@ -138,6 +255,8 @@ body {
             font-size: 44px;
             font-weight: bold;
 
+            cursor: pointer;
+
         }
 
     }
@@ -145,8 +264,8 @@ body {
     .contact {
 
         position: absolute;
-        right: 10px;
-        top: 0;
+        right: 20px;
+        top: 10px;
 
         div {
 
@@ -292,7 +411,6 @@ body {
             border: none;
             border-radius: 100px;
     
-            
             box-shadow:  5px 5px 6px #ccd3d9,
             -5px -5px 6px #ffffff;
             
@@ -349,7 +467,7 @@ body {
 
         position: relative;
         left: -50px;
-        top: 1px;
+        top: 3px;
 
         float: right;
 
@@ -409,6 +527,34 @@ body {
         a:hover:before {
 
             transform: translateX(0);
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1600px) {
+    
+    .footer {
+
+        .links {
+
+            left: 100px;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .footer {
+
+        .links {
+
+            left: 200px;
 
         }
 
