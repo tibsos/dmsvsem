@@ -13,6 +13,8 @@ body {
 
     color: $text-color;
 
+    overflow-x: hidden;
+
 }
 
 
@@ -236,7 +238,7 @@ body {
     
         }
 
-        .name {
+        #name {
 
             position: relative;
             top: 3px;
@@ -368,7 +370,8 @@ body {
     top: 150px;
     left: 50px;
 
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
+    height: 300px;
 
     .text {
 
@@ -431,7 +434,9 @@ body {
 
         width: 50%;
 
-        float: right;
+        float: left;
+
+        text-align: left;
 
     }
 
@@ -460,78 +465,15 @@ body {
 
     }
 
-    .links {
-
-        position: relative;
-        left: -50px;
-        top: 3px;
-
-        float: right;
-
-        a {
-
-            position: relative;
-
-            margin-right: 20px;
-
-            font-size: 22px;
-
-            text-decoration: none;
-            color: inherit;
-
-        }
-
-        /* Link hover effect */
-
-        a:before, a:after, a > span:before, a > span:after {
-
-            content: '';
-            position: absolute;
-            transition: transform .5s ease;
-
-        }
-
-        a, a > span {
-
-            position: relative;
-            color: $text-color;
-            text-decoration: none;
-            line-height: 24px;
-        
-        }
-          
-        a {
-
-            display: inline-flex;
-            padding-top: 10px;
-            padding-bottom: 5px;
-            overflow: hidden;
-
-        }
-          
-        a:before {
-
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            border-radius: 100px;
-            background: #492059;
-            transform: translateX(-100%);
-
-        }
-          
-        a:hover:before {
-
-            transform: translateX(0);
-
-        }
-
-    }
-
 }
 
 @media only screen and (max-width: 1600px) {
+
+    #doctorsSVG {
+
+        transform: scale(0.7);
+
+    }
     
     .footer {
 
@@ -561,16 +503,12 @@ body {
 
 @media only screen and (max-width: 1050px) {
 
-    html {
-
-        margin-bottom: 200px;
-
-    }
+ 
 
 
     .copyright {
 
-        display: none;
+        top: 160px;
        
     }
 
@@ -579,7 +517,12 @@ body {
         left: 10px;
         top: 100px;
 
-        width: 100%;
+
+        .text {
+
+            width: 100%;
+
+        }
 
     }
 
@@ -614,6 +557,46 @@ body {
         #phoneNumber {
 
             display: none;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 605px) {
+
+    .nav {
+
+        a {
+
+            .brand {
+
+                #name {
+
+                    display: none;
+            
+                }
+
+            }
+
+        }
+
+    }
+
+    .content {
+
+        left: 0;
+
+        .text {
+
+            left: 20px;
+
+            #ctaBtn {
+
+                width: 300px;
+
+            }
 
         }
 

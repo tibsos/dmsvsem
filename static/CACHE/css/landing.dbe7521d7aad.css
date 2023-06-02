@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* #00B4D8 #4682B4 */
+/* line 8, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+body {
+  margin-bottom: 800px;
+  background-color: #F0F8FF;
+  color: #1E2330;
+  overflow-x: hidden; }
+
+/* line 21, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* line 28, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+/* line 34, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+::-webkit-scrollbar-thumb {
+  background: #1E2330;
+  border-radius: 50px; }
+
+/* line 42, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+.cta-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10; }
+  /* line 58, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .cta-popup .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 380px;
+    height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #F0F8FF; }
+    /* line 75, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .cta-popup .wrapper #closePopup {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff;
+      font-size: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 3; }
+    /* line 102, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .cta-popup .wrapper #closePopup.in {
+      box-shadow: inset 5px 5px 10px #ccd3d9, inset -5px -5px 10px #ffffff; }
+    /* line 109, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .cta-popup .wrapper h1 {
+      position: relative;
+      top: 20px;
+      left: 20px; }
+    /* line 117, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .cta-popup .wrapper .contact-info {
+      position: relative;
+      top: 30px; }
+      /* line 122, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+      .cta-popup .wrapper .contact-info .phone {
+        position: relative;
+        left: 10px; }
+        /* line 127, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+        .cta-popup .wrapper .contact-info .phone svg {
+          width: 70px;
+          height: 70px;
+          float: left; }
+          /* line 134, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+          .cta-popup .wrapper .contact-info .phone svg path {
+            stroke: green; }
+        /* line 142, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+        .cta-popup .wrapper .contact-info .phone span {
+          position: relative;
+          top: 20px;
+          font-size: 33px; }
+
+/* line 159, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+.nav {
+  position: relative;
+  top: 50px;
+  left: 2.5%;
+  height: 110px;
+  width: 95%;
+  background: #F0F8FF;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px #ccd3d9, -5px -5px 10px #ffffff; }
+  /* line 176, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .nav .brand {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 350px;
+    height: 110px; }
+    /* line 187, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .brand .logo {
+      position: relative;
+      left: 5px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left; }
+      /* line 200, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+      .nav .brand .logo .wrapper {
+        position: relative;
+        bottom: 7px;
+        right: -15px;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; }
+        /* line 215, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+        .nav .brand .logo .wrapper #logoSVG {
+          width: 60px;
+          height: 60px;
+          fill: none; }
+          /* line 222, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+          .nav .brand .logo .wrapper #logoSVG path {
+            stroke: #1E2330; }
+    /* line 234, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .brand .wrapper.in {
+      box-shadow: inset 5px 5px 6px #ccd3d9, inset -5px -5px 6px #ffffff; }
+    /* line 241, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .brand #name {
+      position: relative;
+      top: 3px;
+      right: 5px;
+      width: 250px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      font-size: 48px;
+      font-weight: bold;
+      cursor: pointer; }
+  /* line 265, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .nav .contact {
+    position: absolute;
+    right: 20px;
+    top: 10px; }
+    /* line 271, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .contact div {
+      position: relative;
+      top: 10px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px 5px 10px;
+      border-radius: 100px;
+      box-shadow: 3px 3px 6px #ccd3d9, -3px -3px 6px #ffffff;
+      cursor: pointer; }
+    /* line 294, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .contact div.in {
+      box-shadow: inset 5px 5px 6px #ccd3d9, inset -5px -5px 6px #ffffff; }
+    /* line 301, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .contact .email {
+      float: right; }
+      /* line 305, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+      .nav .contact .email #mailSVG {
+        position: relative;
+        bottom: 2px;
+        width: 70px;
+        height: 70px; }
+        /* line 313, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+        .nav .contact .email #mailSVG polyline, .nav .contact .email #mailSVG rect {
+          stroke: blue; }
+      /* line 321, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+      .nav .contact .email #emailAddress {
+        position: relative;
+        top: 1px;
+        font-size: 24.5px; }
+    /* line 332, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .nav .contact .phone {
+      margin-left: 30px;
+      float: right; }
+      /* line 339, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+      .nav .contact .phone #phoneSVG {
+        width: 55px;
+        height: 55px; }
+        /* line 344, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+        .nav .contact .phone #phoneSVG path {
+          stroke: green; }
+      /* line 352, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+      .nav .contact .phone #phoneNumber {
+        position: relative;
+        top: 1px;
+        font-size: 23px; }
+
+/* line 367, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+.content {
+  position: relative;
+  top: 150px;
+  left: 50px;
+  width: calc(100% - 50px);
+  height: 300px; }
+  /* line 376, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .content .text {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 50%;
+    float: left; }
+    /* line 387, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .content .text h1 {
+      font-size: 80px; }
+    /* line 393, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .content .text h2 {
+      font-size: 60px;
+      font-weight: normal; }
+    /* line 400, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .content .text #ctaBtn {
+      position: relative;
+      height: 70px;
+      width: 450px;
+      background: transparent;
+      border: none;
+      border-radius: 100px;
+      box-shadow: 5px 5px 6px #ccd3d9, -5px -5px 6px #ffffff;
+      font-size: 25px;
+      cursor: pointer; }
+    /* line 421, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .content .text #ctaBtn.in {
+      box-shadow: inset 5px 5px 6px #ccd3d9, inset -5px -5px 6px #ffffff; }
+  /* line 430, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .content .illustration {
+    position: relative;
+    bottom: 50px;
+    width: 50%;
+    float: left;
+    text-align: left; }
+
+/* line 445, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+.footer {
+  position: relative;
+  top: 350px;
+  left: 2.5%;
+  width: 95%; }
+  /* line 454, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .footer .copyright {
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    float: left;
+    font-size: 23px;
+    cursor: pointer; }
+
+@media only screen and (max-width: 1600px) {
+  /* line 472, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  #doctorsSVG {
+    transform: scale(0.7); }
+  /* line 480, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .footer .links {
+    left: 100px; } }
+
+@media only screen and (max-width: 1350px) {
+  /* line 494, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .footer .links {
+    left: 200px; } }
+
+@media only screen and (max-width: 1050px) {
+  /* line 506, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  html {
+    margin-bottom: 200px; }
+  /* line 513, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .copyright {
+    display: none; }
+  /* line 519, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .content {
+    left: 10px;
+    top: 100px; }
+    /* line 524, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+    .content .text {
+      width: 100%; }
+  /* line 532, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .illustration {
+    display: none; }
+  /* line 536, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .contact div {
+    padding: 0; }
+  /* line 542, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .contact .email {
+    width: 60px; }
+  /* line 548, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .contact #emailAddress {
+    display: none; }
+  /* line 554, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .contact .phone {
+    width: 60px; }
+  /* line 560, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .contact #phoneNumber {
+    display: none; } }
+
+@media only screen and (max-width: 605px) {
+  /* line 578, c:/users/следователь/desktop/dv/dmsvsem/static/scss/landing.scss */
+  .nav a .brand #name {
+    display: none; } }
